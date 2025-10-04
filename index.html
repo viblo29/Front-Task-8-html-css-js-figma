@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="fullBox">
-            <div class="box1">
-                <div class="box1-head">Your Result</div>
-                <div class="circle">
-                    <div class="circle-h1">76</div>
-                    <div class="circle-h2">of 100</div>
-                </div>
-                <div class="box1-body">
-                    <div class="box1-h1">Great</div>
-                    <div class="box1-p">Your performance exceed 65% of the people conducting the test here!</div>
-                </div>
+      <div class="fullBox">
+        <div class="box1">
+          <div class="box1-head">Your Result</div>
+          <div class="circle">
+            <div class="circle-h1">76</div>
+            <div class="circle-h2">of 100</div>
+          </div>
+          <div class="box1-body">
+            <div class="box1-h1">Great</div>
+            <div class="box1-p">
+              Your performance exceed 65% of the people conducting the test
+              here!
             </div>
-            <div class="box2">
-                <div class="box2-head">Summary</div>
-                <div class="box2-body">
-                    <div class="reaction">
-                        <div class="icon-list">
-                            <div class="skill-icon"><img src="./svgs/iconoir_flash.svg" alt="Reaction Icon"></div>
-                            <div class="skill-list" style="color: #FF5555;">Reaction</div>
-                        </div>
-                        <div class="skill-score">80  <span class="total-score">/ 100</span></div>
-                    </div>
-                    <div class="memory">
-                        <div class="icon-list">
-                            <div class="skill-icon"><img src="./svgs/iconoir_brain.svg" alt="Memory Icon"></div>
-                            <div class="skill-list" style="color:#FFB21E">Memory</div>
-                        </div>
-                        <div class="skill-score">92  <span class="total-score">/ 100</span></div>
-                    </div>
-                    <div class="verbal">
-                        <div class="icon-list">
-                            <div class="skill-icon"><img src="./svgs/iconoir_chat-remove.svg" alt="Verbal Icon"></div>
-                            <div class="skill-list" style="color: #00BB8F;">Verbal</div>
-                        </div>
-                        <div class="skill-score">61  <span class="total-score">/ 100</span></div>
-                    </div>
-                    <div class="visual">
-                        <div class="icon-list">
-                            <div class="skill-icon"><img src="./svgs/iconoir_eye-empty.svg" alt="Visual Icon"></div>
-                            <div class="skill-list" style="color: #1125D6;">Visual</div>
-                        </div>
-                        <div class="skill-score">73  <span class="total-score">/ 100</span></div>
-                    </div>
-                </div>
-                <button id="continueButton" class="box2Btn" type="button">Continue</button>
-            </div>
+          </div>
         </div>
+        <div class="box2">
+          <div class="box2-head">Summary</div>
+          <div class="box2-body">
+            <div class="reaction">
+              <div class="icon-list">
+                <div class="skill-icon">
+                  <img src="./svgs/iconoir_flash.svg" alt="Reaction Icon" />
+                </div>
+                <div class="skill-list" style="color: #ff5555">Reaction</div>
+              </div>
+              <div class="skill-score">
+                80 <span class="total-score">/ 100</span>
+              </div>
+            </div>
+            <div class="memory">
+              <div class="icon-list">
+                <div class="skill-icon">
+                  <img src="./svgs/iconoir_brain.svg" alt="Memory Icon" />
+                </div>
+                <div class="skill-list" style="color: #ffb21e">Memory</div>
+              </div>
+              <div class="skill-score">
+                92 <span class="total-score">/ 100</span>
+              </div>
+            </div>
+            <div class="verbal">
+              <div class="icon-list">
+                <div class="skill-icon">
+                  <img src="./svgs/iconoir_chat-remove.svg" alt="Verbal Icon" />
+                </div>
+                <div class="skill-list" style="color: #00bb8f">Verbal</div>
+              </div>
+              <div class="skill-score">
+                61 <span class="total-score">/ 100</span>
+              </div>
+            </div>
+            <div class="visual">
+              <div class="icon-list">
+                <div class="skill-icon">
+                  <img src="./svgs/iconoir_eye-empty.svg" alt="Visual Icon" />
+                </div>
+                <div class="skill-list" style="color: #1125d6">Visual</div>
+              </div>
+              <div class="skill-score">
+                73 <span class="total-score">/ 100</span>
+              </div>
+            </div>
+          </div>
+          <button id="continueButton" class="box2Btn" type="button">
+            Continue
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="reg-app-container" id="reg-app-modal-container">
-        <div class="reg-app-card" id="reg-app-card">
-
-            <div class="reg-app-branding">
-                <h2>Access Your Exclusive Portal</h2>
-                <p>Register quickly to save your results and continue your progress with our platform.</p>
-            </div>
-
-            <div class="reg-app-form-panel">
-                <div class="reg-app-content" id="reg-app-content">
-                    <div class="reg-app-header">
-                        <h1>Create Account</h1>
-                        <p>All fields are required for validation.</p>
-                    </div>
-                    <form id="reg-app-form" action="">
-                        <input class="reg-app-input" type="text" name="fullName" id="reg-app-fullName" placeholder="Full Name (First & Last)">
-                        <div class="reg-app-error-msg" id="reg-app-fullName-error"></div>
-
-                        <input class="reg-app-input" type="email" name="email" id="reg-app-email" placeholder="Email Address">
-                        <div class="reg-app-error-msg" id="reg-app-email-error"></div>
-
-                        <input class="reg-app-input" type="password" name="password" id="reg-app-password" placeholder="Password">
-                        <div class="reg-app-error-msg" id="reg-app-password-error"></div>
-
-                        <input class="reg-app-input" type="password" name="confirmPassword" id="reg-app-confirmPassword" placeholder="Confirm Password">
-                        <div class="reg-app-error-msg" id="reg-app-confirmPassword-error"></div>
-
-                        <button id="reg-app-submit" class="reg-app-submit-btn" type="submit">REGISTER</button>
-                    </form>
-                </div>
-            </div>
-
+      <div class="reg-app-card" id="reg-app-card">
+        <div class="reg-app-branding">
+          <h2>Access Your Exclusive Portal</h2>
+          <p>
+            Register quickly to save your results and continue your progress
+            with our platform.
+          </p>
         </div>
+
+        <div class="reg-app-form-panel">
+          <div class="reg-app-content" id="reg-app-content">
+            <div class="reg-app-header">
+              <h1>Create Account</h1>
+              <p>All fields are required for validation.</p>
+            </div>
+            <form id="reg-app-form" action="">
+              <input
+                class="reg-app-input"
+                type="text"
+                name="fullName"
+                id="reg-app-fullName"
+                placeholder="Full Name (First & Last)"
+              />
+              <div class="reg-app-error-msg" id="reg-app-fullName-error"></div>
+
+              <input
+                class="reg-app-input"
+                type="email"
+                name="email"
+                id="reg-app-email"
+                placeholder="Email Address"
+              />
+              <div class="reg-app-error-msg" id="reg-app-email-error"></div>
+
+              <input
+                class="reg-app-input"
+                type="password"
+                name="password"
+                id="reg-app-password"
+                placeholder="Password"
+              />
+              <div class="reg-app-error-msg" id="reg-app-password-error"></div>
+
+              <input
+                class="reg-app-input"
+                type="password"
+                name="confirmPassword"
+                id="reg-app-confirmPassword"
+                placeholder="Confirm Password"
+              />
+              <div
+                class="reg-app-error-msg"
+                id="reg-app-confirmPassword-error"
+              ></div>
+
+              <button
+                id="reg-app-submit"
+                class="reg-app-submit-btn"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
