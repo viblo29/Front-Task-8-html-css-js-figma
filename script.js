@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const confirmValue = confirmPasswordInput.value;
-
         if (confirmValue.trim() === '') {
             showError(confirmPasswordInput, "Confirmation password is required.");
             isValid = false;
